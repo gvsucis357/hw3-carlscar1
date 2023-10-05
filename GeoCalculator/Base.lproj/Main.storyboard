@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RHd-vs-t6I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RHd-vs-t6I">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,63 +20,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uNp-v1-2qE" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
-                                <rect key="frame" x="20" y="52" width="173" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D9N-Mn-vy0" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
-                                <rect key="frame" x="20" y="90" width="173" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ODb-he-QKd" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
-                                <rect key="frame" x="207" y="90" width="167" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-bf-QPo" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
-                                <rect key="frame" x="207" y="52" width="167" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0a-NC-f8C">
-                                <rect key="frame" x="16" y="128" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LYr-mT-1Xe">
+                                <rect key="frame" x="20" y="67" width="350" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vMW-JG-qvG">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uNp-v1-2qE" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-bf-QPo" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="182" y="0.0" width="168" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-5J-CHR">
+                                        <rect key="frame" x="0.0" y="38" width="350" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D9N-Mn-vy0" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ODb-he-QKd" customClass="DecimalMinusTextField" customModule="GeoCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="182" y="0.0" width="168" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0a-NC-f8C">
+                                <rect key="frame" x="20" y="147" width="130" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculateButtonPressed:" destination="RHd-vs-t6I" eventType="touchUpInside" id="IKc-1J-dDp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-Wa-Nz3">
-                                <rect key="frame" x="338" y="128" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-Wa-Nz3">
+                                <rect key="frame" x="240" y="147" width="130" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearButtonPressed:" destination="RHd-vs-t6I" eventType="touchUpInside" id="q9b-uP-Knu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v2-Lp-rBT">
-                                <rect key="frame" x="16" y="166" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v2-Lp-rBT">
+                                <rect key="frame" x="20" y="185" width="350" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bearing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-AD-ThA">
-                                <rect key="frame" x="16" y="195" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-AD-ThA">
+                                <rect key="frame" x="20" y="213.33333333333334" width="350" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-Q4-7mk">
-                                <rect key="frame" x="167" y="751" width="57" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-Q4-7mk">
+                                <rect key="frame" x="130" y="760" width="130" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="qIG-pK-hhp" kind="presentation" identifier="settingsSegue" modalPresentationStyle="fullScreen" id="Paq-AN-6KJ"/>
@@ -85,6 +91,26 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ETs-te-zyL"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FZx-AD-ThA" firstAttribute="top" secondItem="5v2-Lp-rBT" secondAttribute="bottom" constant="8" id="15T-uN-xaL"/>
+                            <constraint firstItem="ETs-te-zyL" firstAttribute="bottom" secondItem="rOL-Q4-7mk" secondAttribute="bottom" constant="20" id="3OS-LJ-0Mw"/>
+                            <constraint firstItem="rOL-Q4-7mk" firstAttribute="centerX" secondItem="ETs-te-zyL" secondAttribute="centerX" id="48Q-wV-ewA"/>
+                            <constraint firstItem="ETs-te-zyL" firstAttribute="trailing" secondItem="5v2-Lp-rBT" secondAttribute="trailing" constant="20" id="5qU-9C-6mT"/>
+                            <constraint firstItem="rOL-Q4-7mk" firstAttribute="width" secondItem="2dC-dl-oDi" secondAttribute="width" multiplier="1:3" id="6NH-cX-YHb"/>
+                            <constraint firstItem="v0a-NC-f8C" firstAttribute="leading" secondItem="ETs-te-zyL" secondAttribute="leading" constant="20" id="6ng-Sy-fpb"/>
+                            <constraint firstItem="5v2-Lp-rBT" firstAttribute="top" secondItem="v0a-NC-f8C" secondAttribute="bottom" constant="8" symbolic="YES" id="BxX-jM-QXh"/>
+                            <constraint firstItem="v0a-NC-f8C" firstAttribute="top" secondItem="LYr-mT-1Xe" secondAttribute="bottom" constant="8" symbolic="YES" id="CE1-yq-7mS"/>
+                            <constraint firstItem="FZx-AD-ThA" firstAttribute="leading" secondItem="ETs-te-zyL" secondAttribute="leading" constant="20" id="Fu8-j4-RP9"/>
+                            <constraint firstItem="ETs-te-zyL" firstAttribute="trailing" secondItem="xnS-Wa-Nz3" secondAttribute="trailing" constant="20" id="L42-Uv-uWE"/>
+                            <constraint firstItem="xnS-Wa-Nz3" firstAttribute="width" secondItem="2dC-dl-oDi" secondAttribute="width" multiplier="1:3" id="Pk3-Xp-iD9"/>
+                            <constraint firstItem="5v2-Lp-rBT" firstAttribute="leading" secondItem="ETs-te-zyL" secondAttribute="leading" constant="20" id="S7g-Fd-Fo1"/>
+                            <constraint firstItem="LYr-mT-1Xe" firstAttribute="top" secondItem="ETs-te-zyL" secondAttribute="top" constant="20" id="SFG-qI-sB2"/>
+                            <constraint firstItem="xnS-Wa-Nz3" firstAttribute="top" secondItem="LYr-mT-1Xe" secondAttribute="bottom" constant="8" symbolic="YES" id="Vs3-Ak-HON"/>
+                            <constraint firstItem="ETs-te-zyL" firstAttribute="trailing" secondItem="FZx-AD-ThA" secondAttribute="trailing" constant="20" id="W6g-1C-rzr"/>
+                            <constraint firstItem="LYr-mT-1Xe" firstAttribute="leading" secondItem="ETs-te-zyL" secondAttribute="leading" constant="20" id="XNb-yv-Eea"/>
+                            <constraint firstItem="v0a-NC-f8C" firstAttribute="width" secondItem="2dC-dl-oDi" secondAttribute="width" multiplier="1:3" id="fNZ-4a-zG2"/>
+                            <constraint firstItem="ETs-te-zyL" firstAttribute="trailing" secondItem="LYr-mT-1Xe" secondAttribute="trailing" constant="20" id="tFz-Yd-8bS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bearingLabel" destination="FZx-AD-ThA" id="Euj-S5-Mhq"/>
@@ -177,7 +203,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="km8-Ck-23A"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8wf-vy-IGA">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
