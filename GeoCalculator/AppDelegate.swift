@@ -7,14 +7,23 @@
 
 import UIKit
 
-@main
+let BACKGROUND_COLOR = UIColor.init(red:0.000, green:0.157, blue:0.216, alpha:1.00)
+    // DARK BLUE background
+let FOREGROUND_COLOR = UIColor.init(red: 0.86, green: 0.82, blue: 1.00, alpha: 1.00)
+    // Light foreground (lavender)
+
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+            let navAppearance = UINavigationBar.appearance()
+            navAppearance.barTintColor = BACKGROUND_COLOR
+            navAppearance.tintColor = FOREGROUND_COLOR
+            navAppearance.isTranslucent = false
+            navAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.init(red:0.000, green:0.157, blue:0.216, alpha:1.00)]
+
+            return true
     }
 
     // MARK: UISceneSession Lifecycle

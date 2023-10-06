@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F24F0342AD094AB000910E2 /* GeoCalculatorBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */; };
 		9E7BE5AC26F2529200E7C435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AB26F2529200E7C435 /* AppDelegate.swift */; };
 		9E7BE5AE26F2529200E7C435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AD26F2529200E7C435 /* SceneDelegate.swift */; };
 		9E7BE5B026F2529200E7C435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AF26F2529200E7C435 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalculatorBaseViewController.swift; sourceTree = "<group>"; };
 		9E7BE5A826F2529200E7C435 /* GeoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7BE5AB26F2529200E7C435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7BE5AD26F2529200E7C435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				9E7BE5B426F2529300E7C435 /* Assets.xcassets */,
 				9E7BE5B626F2529300E7C435 /* LaunchScreen.storyboard */,
 				9E7BE5B926F2529300E7C435 /* Info.plist */,
+				3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */,
 				9E7BE5ED26F255A400E7C435 /* SettingsViewController.swift */,
 			);
 			path = GeoCalculator;
@@ -270,6 +273,7 @@
 				9E7BE5E626F2543500E7C435 /* CLLocationExtensions.swift in Sources */,
 				9E7BE5B026F2529200E7C435 /* ViewController.swift in Sources */,
 				9E7BE5AC26F2529200E7C435 /* AppDelegate.swift in Sources */,
+				3F24F0342AD094AB000910E2 /* GeoCalculatorBaseViewController.swift in Sources */,
 				9E7BE5E126F253DF00E7C435 /* DecimalMinusTextField.swift in Sources */,
 				9E7BE5AE26F2529200E7C435 /* SceneDelegate.swift in Sources */,
 				9E7BE5EE26F255A400E7C435 /* SettingsViewController.swift in Sources */,
