@@ -15,8 +15,12 @@ class ViewController: GeoCalculatorBaseViewController {
     @IBOutlet weak var p2Lat: DecimalMinusTextField!
     @IBOutlet weak var p2Lng: DecimalMinusTextField!
     
-    @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var bearingLabel: UILabel!
+    @IBOutlet weak var distanceLabel: GeoCalcLabel!
+    @IBOutlet weak var bearingLabel: GeoCalcLabel!
+    
+    @IBOutlet weak var CalculateButton: GeoCalcButton!
+    @IBOutlet weak var ClearButton: GeoCalcButton!
+    @IBOutlet weak var SettingsButton: GeoCalcButton!
     
     var distanceUnits : String = "Kilometers"
     var bearingUnits : String = "Degrees"

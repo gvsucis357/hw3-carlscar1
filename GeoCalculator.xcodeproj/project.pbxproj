@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F24F0342AD094AB000910E2 /* GeoCalculatorBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */; };
+		3F24F0362AD340EA000910E2 /* GeoCalcTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24F0352AD340EA000910E2 /* GeoCalcTextField.swift */; };
+		3F24F0382AD3465B000910E2 /* GeoCalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24F0372AD3465B000910E2 /* GeoCalcLabel.swift */; };
+		3F24F03A2AD3481F000910E2 /* GeoCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24F0392AD3481E000910E2 /* GeoCalcButton.swift */; };
 		9E7BE5AC26F2529200E7C435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AB26F2529200E7C435 /* AppDelegate.swift */; };
 		9E7BE5AE26F2529200E7C435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AD26F2529200E7C435 /* SceneDelegate.swift */; };
 		9E7BE5B026F2529200E7C435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE5AF26F2529200E7C435 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalculatorBaseViewController.swift; sourceTree = "<group>"; };
+		3F24F0352AD340EA000910E2 /* GeoCalcTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcTextField.swift; sourceTree = "<group>"; };
+		3F24F0372AD3465B000910E2 /* GeoCalcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcLabel.swift; sourceTree = "<group>"; };
+		3F24F0392AD3481E000910E2 /* GeoCalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcButton.swift; sourceTree = "<group>"; };
 		9E7BE5A826F2529200E7C435 /* GeoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7BE5AB26F2529200E7C435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7BE5AD26F2529200E7C435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 				9E7BE5B926F2529300E7C435 /* Info.plist */,
 				3F24F0332AD094AA000910E2 /* GeoCalculatorBaseViewController.swift */,
 				9E7BE5ED26F255A400E7C435 /* SettingsViewController.swift */,
+				3F24F0352AD340EA000910E2 /* GeoCalcTextField.swift */,
+				3F24F0372AD3465B000910E2 /* GeoCalcLabel.swift */,
+				3F24F0392AD3481E000910E2 /* GeoCalcButton.swift */,
 			);
 			path = GeoCalculator;
 			sourceTree = "<group>";
@@ -270,12 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F24F0362AD340EA000910E2 /* GeoCalcTextField.swift in Sources */,
 				9E7BE5E626F2543500E7C435 /* CLLocationExtensions.swift in Sources */,
+				3F24F0382AD3465B000910E2 /* GeoCalcLabel.swift in Sources */,
 				9E7BE5B026F2529200E7C435 /* ViewController.swift in Sources */,
 				9E7BE5AC26F2529200E7C435 /* AppDelegate.swift in Sources */,
 				3F24F0342AD094AB000910E2 /* GeoCalculatorBaseViewController.swift in Sources */,
 				9E7BE5E126F253DF00E7C435 /* DecimalMinusTextField.swift in Sources */,
 				9E7BE5AE26F2529200E7C435 /* SceneDelegate.swift in Sources */,
+				3F24F03A2AD3481F000910E2 /* GeoCalcButton.swift in Sources */,
 				9E7BE5EE26F255A400E7C435 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

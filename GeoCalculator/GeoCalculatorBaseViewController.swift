@@ -18,7 +18,7 @@ class GeoCalculatorBaseViewController: UIViewController {
     }
 }
 
-class TraxyNavigationController : UINavigationController {
+class NavigationController : UINavigationController {
     override open var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
